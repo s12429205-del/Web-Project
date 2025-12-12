@@ -107,16 +107,6 @@ nav a.active {
     }
 }
 
-main {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
 h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -135,4 +125,14 @@ footer {
     text-align: center;
     padding: 2rem;
     margin-top: 3rem;
+}
+div{
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+img{
+ width: 440px;
+ height: 310px;
 }
