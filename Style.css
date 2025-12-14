@@ -75,7 +75,7 @@ nav a.active {
     transition: 0.3s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .nav-toggle {
         display: flex;
     }
@@ -135,4 +135,6 @@ div{
 img{
  width: 440px;
  height: 310px;
+ display: flex;
+ flex-wrap: wrap;
 }
