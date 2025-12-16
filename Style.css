@@ -20,8 +20,8 @@
 }
 
 header {
-    background: #333;
-    color: white;
+    background: #648249;
+    color: rgb(235, 249, 220);
     padding: 1rem;
     position: sticky;
     top: 0;
@@ -37,10 +37,11 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 1rem;
+    justify-content: space-around;
 }
 
 nav a {
-    color: white;
+    color: rgb(235, 249, 220);
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -120,21 +121,44 @@ p {
 }
 
 footer {
-    background: #222;
+    background: #648249;
     color: white;
     text-align: center;
     padding: 2rem;
     margin-top: 3rem;
 }
-div{
+
+div {
     margin-right: 50px;
     margin-left: 50px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
-img{
- width: 440px;
- height: 310px;
- display: flex;
- flex-wrap: wrap;
+
+img {
+    border-radius: 8px;
+    width: 440px;
+    height: 290px;
+    display: block;
+    margin: auto;
+    float: left;
+    clip-path: square(40%);
+    shape-outside: square(45%);
+}
+
+.land {
+    border-radius: 8px;
+    width: 440px;
+    height: 290px;
+    display: block;
+    margin: auto;
+    float: right;
+    clip-path: square(40%);
+    shape-outside: square(45%);
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+body {
+    background-color: rgb(235, 249, 220);
 }
