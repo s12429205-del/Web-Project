@@ -152,6 +152,12 @@ nav a.active {
     }
 }
 
+#mylogo {
+    margin: auto;
+    width: 1000px;
+    height: 550px;
+}
+
 h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -185,7 +191,6 @@ img {
     height: 290px;
     display: block;
     margin: auto;
-    float: left;
     clip-path: square(40%);
     shape-outside: square(45%);
 }
