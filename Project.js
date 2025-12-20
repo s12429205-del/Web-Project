@@ -1,6 +1,6 @@
-setTimeout(function (){
-    document.getElementById("Jerusalem").style.display="none";
-},3000);
+setTimeout(function () {
+    document.getElementById("Jerusalem").style.display = "none";
+}, 3000);
 document.addEventListener('DOMContentLoaded', function () {
     const navToggle = document.querySelector('.nav-toggle');
     const navUl = document.querySelector('nav ul');

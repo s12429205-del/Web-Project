@@ -1,4 +1,4 @@
-#Jerusalem{
+#Jerusalem {
     position: fixed;
     top: 0;
     left: 0;
@@ -19,13 +19,13 @@
     z-index: 1000;
 }
 
-#Jerusalem img{
+#Jerusalem img {
     width: 960px;
     height: 520px;
     animation: zoom 2s;
 }
 
-#Jerusalem h1{
+#Jerusalem h1 {
     animation: fadeIn 3s;
     margin-top: 10px;
     font-size: 75px;
@@ -33,17 +33,27 @@
     color: #f0f8ab;
 }
 
-@keyframes zoom{
-    from{transform:scale(0);}
-    to{transform:scale(1);}
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
 }
 
-@keyframes fedeIn{
-    from{opacity:0;}
-    to{opacity:1;}
+@keyframes fedeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -121,38 +131,77 @@ nav a.active {
     transition: 0.3s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+    #Jerusalem {
+        height: 40vh;
+        min-height: 300px;
+    }
+    
+    #Jerusalem h1 {
+        font-size: 2rem;
+    }
+    
     .nav-toggle {
         display: flex;
     }
-
+    
     nav ul {
-        display: none;
-        flex-direction: column;
         position: absolute;
         top: 100%;
-        left: 0;
         right: 0;
-        background: #333;
-        padding: 1rem;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        left: 0;
+        background-color: var(--white);
+        flex-direction: column;
+        align-items: stretch;
+        box-shadow: var(--shadow);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        gap: 0;
     }
-
-    nav ul.show {
-        display: flex;
+    
+    nav ul.active {
+        max-height: 400px;
     }
-
-    nav a {
+    
+    nav ul li {
+        width: 100%;
+        border-bottom: 1px solid #eee;
+    }
+    
+    nav ul li a {
         display: block;
-        padding: 0.75rem 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 1rem;
+        text-align: center;
     }
-
-    nav a:last-child {
-        border-bottom: none;
+    
+    .content-section {
+        margin: 1rem 0;
+        padding: 1.5rem;
+    }
+    
+    .content-section p {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+    
+    #mylogo {
+        max-width: 200px;
+    }
+    
+    .video-container {
+        padding: 1rem;
+    }
+    
+    .video-caption {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+    
+    .footer-item img {
+        max-width: 200px;
     }
 }
-
 #mylogo {
     margin: auto;
     width: 1000px;
@@ -173,7 +222,7 @@ p {
 
 footer {
     background: #648249;
-    color: white;
+    color: rgb(235, 249, 220);
     text-align: center;
     padding: 2rem;
     margin-top: 3rem;
