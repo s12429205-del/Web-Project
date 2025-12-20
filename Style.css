@@ -20,8 +20,8 @@
 }
 
 #Jerusalem img{
-    width: 800px;
-    height: 500px;
+    width: 960px;
+    height: 520px;
     animation: zoom 2s;
 }
 
@@ -30,6 +30,7 @@
     margin-top: 10px;
     font-size: 75px;
     text-align: center;
+    color: #f0f8ab;
 }
 
 @keyframes zoom{
